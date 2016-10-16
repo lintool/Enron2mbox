@@ -35,7 +35,7 @@ for folder in folders:
   print("Processing " + folder)
   os.makedirs(folder + "/cur")
   os.makedirs(folder + "/new")
-  for file in glob.glob(folder + "/[0-9]*"):
+  for file in glob.glob(folder + "/[0-9]*."):
     shutil.move(file, folder + "/cur")
 
 os.makedirs("enron")
