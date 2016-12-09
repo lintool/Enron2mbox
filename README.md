@@ -59,6 +59,6 @@ $ ./verify_mbox.sh > mbox.log &
 Confirm that the number of messages is exactly the same:
 
 ```
-$ grep "Number of messages" mbox.log | cut -d' ' -f4 | awk '{s+=$1} END {print s}'
+$ cut -d' ' -f3 mbox.log | awk '{s+=$1} END {print s}'
 517401
 ```
