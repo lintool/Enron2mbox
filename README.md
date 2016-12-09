@@ -29,6 +29,8 @@ $ ./convert_enron_to_mbox.py
 
 It might take a bit, so go grab a cup of coffee...
 
+Note that the script is destructive, in that it alters the original structure of the dataset. This is necessary to get everything in the right `maildir` format so that it can be processed by Python tools (in particular, the script creates `cur/` and `new/` directories, which is part of the expected layout).
+
 After the script completes, the resulting mbox files are stored in the `enron/` directory:
 
 ```
